@@ -1,6 +1,12 @@
 import React from 'react';
-import { StyleSheet, Button, Text, Modal, TouchableOpacity, TouchableHighlight, Dimensions, Image, View, ActivityIndicator, ScrollView, ImageBackground } from 'react-native';
-import ImageElement from './ImageElement'
+import { StyleSheet, 
+  Text, 
+  Modal, 
+  TouchableOpacity, 
+  Image, 
+  View, 
+  ActivityIndicator, 
+  ScrollView } from 'react-native';
 
 
 export default class App extends React.Component {
@@ -31,16 +37,7 @@ export default class App extends React.Component {
   }
 
   state = {
-    stop: false,
     isVisible: false,
-    modalImage: null,
-    stop: false,
-    imagekey: undefined,
-  }
-
-  ShowImage = () => {
-    this.setState({isVisible: true});
-    this.setState({stop: true});
   }
   
   UnshowImage = () => {
